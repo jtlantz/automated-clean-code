@@ -27,6 +27,13 @@ def test_find_max_char_occurence():
     assert h.count == 2
 
 
+def test_find_max_char_occurence_2():
+    text = "bannnna"
+    h = find_max_char_occurence(text)
+    assert h.character == "n"
+    assert h.count == 4
+
+
 def test_find_min_char_occurence():
     text = "appllee"
     h = find_min_char_occurence(text)
